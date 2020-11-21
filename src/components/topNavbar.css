@@ -1,15 +1,11 @@
 .navbar {
-    width: 1000px;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
     background-color: white !important;
 }
 
-.navbar-collapse {
-    display: flex !important;
-    flex-grow: 0 !important;
-    justify-content:flex-end !important;
+@media (min-width: 992px){
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
 }
 
 /* link to homepage on the topleft */
@@ -28,6 +24,7 @@
 .nav-link:hover {
     color: var(--python-gallery) !important;
     border-bottom: solid var(--python-gallery);
+    border-width: 1px;
 }
 
 .dropdown-item {
